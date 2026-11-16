@@ -1,0 +1,6 @@
+{
+  "name": "LOVEConnect",
+  "description": "AI-powered modern dating app with smart matching, real-time chat, compatibility insights, and icebreakers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

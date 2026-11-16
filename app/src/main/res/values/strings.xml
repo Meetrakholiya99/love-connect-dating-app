@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LOVEConnect</string>
+    <string name="brand_tagline">Meaningful Sparks, Intelligently Matched</string>
+    <string name="age_notice">Strictly 18+ verified community</string>
+    <string name="ai_firebase_notice">Sample AI preview active. Connect Firebase in AI Studio to enable live Gemini AI.</string>
+    <string name="distance_privacy_note">Only approximate distance is shown. Exact location is never shared.</string>
+</resources>

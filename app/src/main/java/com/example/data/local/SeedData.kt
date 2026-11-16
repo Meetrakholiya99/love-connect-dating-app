@@ -1,0 +1,223 @@
+package com.example.data.local
+
+object SeedData {
+    val defaultProfiles = listOf(
+        UserProfileEntity(
+            id = "prof_sophia",
+            isCurrentUser = false,
+            fullName = "Sophia Laurent",
+            dateOfBirth = "2001-04-18",
+            age = 25,
+            gender = "Woman",
+            interestedIn = "Everyone",
+            bio = "Architectural photographer chasing golden hour light, espresso tonic flights, and slow Sunday vinyl sessions.",
+            city = "San Francisco",
+            distanceKm = 3,
+            education = "UC Berkeley · M.Arch",
+            profession = "Architectural Photographer",
+            hobbiesCsv = "Film Photography|Ceramics|Hiking|Espresso Tasting",
+            interestsCsv = "Architecture|Indie Music|Travel|Coffee|Art Galleries",
+            relationshipGoal = "Long-term partner",
+            languagesCsv = "English|French",
+            heightCm = 169,
+            photosCsv = "drawable:sophia|drawable:elena",
+            isVerified = true,
+            isOnline = true,
+            isBoosted = true,
+            likesYou = true,
+            willMatchOnLike = true
+        ),
+        UserProfileEntity(
+            id = "prof_marcus",
+            isCurrentUser = false,
+            fullName = "Marcus Bennett",
+            dateOfBirth = "1999-08-11",
+            age = 27,
+            gender = "Man",
+            interestedIn = "Women",
+            bio = "Product designer by day, amateur sourdough baker and jazz saxophonist by night. Let's find the best tacos in town.",
+            city = "Oakland",
+            distanceKm = 8,
+            education = "Stanford University",
+            profession = "Lead Product Designer",
+            hobbiesCsv = "Baking|Jazz Saxophone|Cycling|Pour-over Coffee",
+            interestsCsv = "Design|Live Jazz|Foodie|Cycling|Cinema",
+            relationshipGoal = "Long-term partner",
+            languagesCsv = "English|Spanish",
+            heightCm = 183,
+            photosCsv = "drawable:marcus|drawable:liam",
+            isVerified = true,
+            isOnline = true,
+            isBoosted = false,
+            likesYou = true,
+            willMatchOnLike = true
+        ),
+        UserProfileEntity(
+            id = "prof_elena",
+            isCurrentUser = false,
+            fullName = "Elena Vance",
+            dateOfBirth = "2000-02-22",
+            age = 26,
+            gender = "Woman",
+            interestedIn = "Everyone",
+            bio = "Contemporary art curator who loves museum previews, botanical gardens, and spontaneous coastal road trips.",
+            city = "San Francisco",
+            distanceKm = 5,
+            education = "RISD · Curatorial Studies",
+            profession = "Gallery Curator",
+            hobbiesCsv = "Painting|Museum Hopping|Coastal Drives|Yoga",
+            interestsCsv = "Art Galleries|Travel|Philosophy|Yoga|Coffee",
+            relationshipGoal = "Long-term, open to short",
+            languagesCsv = "English|Italian",
+            heightCm = 172,
+            photosCsv = "drawable:elena|drawable:sophia",
+            isVerified = true,
+            isOnline = false,
+            isBoosted = true,
+            likesYou = true,
+            willMatchOnLike = true
+        ),
+        UserProfileEntity(
+            id = "prof_liam",
+            isCurrentUser = false,
+            fullName = "Liam Mercer",
+            dateOfBirth = "1998-09-03",
+            age = 28,
+            gender = "Man",
+            interestedIn = "Everyone",
+            bio = "Marine conservationist & weekend surfer. Happiest near ocean cliffs, campfires, and acoustic playlists.",
+            city = "Sausalito",
+            distanceKm = 12,
+            education = "UCSB · Marine Biology",
+            profession = "Ocean Conservation Scientist",
+            hobbiesCsv = "Surfing|Trail Running|Stargazing|Guitar",
+            interestsCsv = "Ocean|Travel|Indie Music|Photography|Hiking",
+            relationshipGoal = "Long-term partner",
+            languagesCsv = "English|Portuguese",
+            heightCm = 185,
+            photosCsv = "drawable:liam|drawable:marcus",
+            isVerified = true,
+            isOnline = true,
+            isBoosted = false,
+            likesYou = false,
+            willMatchOnLike = true
+        ),
+        UserProfileEntity(
+            id = "prof_aria",
+            isCurrentUser = false,
+            fullName = "Aria Kapoor",
+            dateOfBirth = "2002-01-19",
+            age = 24,
+            gender = "Woman",
+            interestedIn = "Everyone",
+            bio = "ML researcher building ethical health tech. Ask me about hidden speakeasies, board game nights, and matcha.",
+            city = "Palo Alto",
+            distanceKm = 24,
+            education = "MIT · Computer Science",
+            profession = "AI Research Engineer",
+            hobbiesCsv = "Board Games|Matcha Making|Tennis|Sci-Fi Novels",
+            interestsCsv = "Tech|Foodie|Tennis|Cinema|Travel",
+            relationshipGoal = "Figuring it out",
+            languagesCsv = "English|Hindi",
+            heightCm = 165,
+            photosCsv = "drawable:sophia",
+            isVerified = false,
+            isOnline = true,
+            isBoosted = false,
+            likesYou = true,
+            willMatchOnLike = false
+        ),
+        UserProfileEntity(
+            id = "prof_noah",
+            isCurrentUser = false,
+            fullName = "Noah Takahashi",
+            dateOfBirth = "1997-06-30",
+            age = 29,
+            gender = "Man",
+            interestedIn = "Everyone",
+            bio = "Chef & culinary storyteller exploring seasonal farmers markets. Bonus points if you enjoy midnight ramen.",
+            city = "Berkeley",
+            distanceKm = 15,
+            education = "Culinary Institute of America",
+            profession = "Executive Sous Chef",
+            hobbiesCsv = "Cooking|Pottery|Vinyl Collecting|Running",
+            interestsCsv = "Foodie|Cooking|Indie Music|Art Galleries|Coffee",
+            relationshipGoal = "Long-term partner",
+            languagesCsv = "English|Japanese",
+            heightCm = 179,
+            photosCsv = "drawable:marcus",
+            isVerified = true,
+            isOnline = false,
+            isBoosted = false,
+            likesYou = false,
+            willMatchOnLike = true
+        )
+    )
+
+    val initialMatch = MatchEntity(
+        id = "match_prof_elena",
+        profileId = "prof_elena",
+        matchedAt = System.currentTimeMillis() - 3_600_000L * 4,
+        isSuperLike = true,
+        lastMessagePreview = "Loved your gallery photo! Which exhibition is next?",
+        lastMessageTime = System.currentTimeMillis() - 1_800_000L,
+        unreadCount = 1
+    )
+
+    val initialMessages = listOf(
+        ChatMessageEntity(
+            id = "msg_seed_1",
+            matchId = "match_prof_elena",
+            senderId = "prof_elena",
+            text = "Hey! Super excited we matched — your profile vibe is awesome ✨",
+            timestamp = System.currentTimeMillis() - 3_500_000L,
+            status = "READ"
+        ),
+        ChatMessageEntity(
+            id = "msg_seed_2",
+            matchId = "match_prof_elena",
+            senderId = "me",
+            text = "Thanks Elena! I noticed you're a gallery curator — any favorite spots in SF right now?",
+            timestamp = System.currentTimeMillis() - 2_400_000L,
+            status = "READ"
+        ),
+        ChatMessageEntity(
+            id = "msg_seed_3",
+            matchId = "match_prof_elena",
+            senderId = "prof_elena",
+            text = "Loved your gallery photo! Which exhibition is next?",
+            timestamp = System.currentTimeMillis() - 1_800_000L,
+            status = "DELIVERED"
+        )
+    )
+
+    val initialNotifications = listOf(
+        AppNotificationEntity(
+            id = "notif_1",
+            type = "SUPER_LIKE",
+            title = "You got a Super Like!",
+            body = "Elena Vance Super Liked your profile.",
+            relatedProfileId = "prof_elena",
+            timestamp = System.currentTimeMillis() - 4_000_000L,
+            isRead = false
+        ),
+        AppNotificationEntity(
+            id = "notif_2",
+            type = "LIKE",
+            title = "3 new people liked you",
+            body = "Sophia Laurent and 2 others are waiting to connect.",
+            relatedProfileId = "prof_sophia",
+            timestamp = System.currentTimeMillis() - 7_200_000L,
+            isRead = false
+        ),
+        AppNotificationEntity(
+            id = "notif_3",
+            type = "SECURITY",
+            title = "18+ Community Safety Active",
+            body = "Approximate distance privacy mode is protecting your exact location.",
+            relatedProfileId = null,
+            timestamp = System.currentTimeMillis() - 86_400_000L,
+            isRead = true
+        )
+    )
+}
